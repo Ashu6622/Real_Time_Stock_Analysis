@@ -1,4 +1,3 @@
-import fetch from "node-fetch";
 
 export async function fetchCMP(symbol) {
   if (!symbol) return 0;
