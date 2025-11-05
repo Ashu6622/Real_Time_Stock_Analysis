@@ -4,6 +4,9 @@ import "../styles/globals.css";
 export const metadata = {
 title: "Dynamic Portfolio Dashboard",
 description: "Next.js + Tailwind + React-Table + Recharts",
+icons: {
+  icon: '/BSE_logo.png',
+},
 };
 
 
