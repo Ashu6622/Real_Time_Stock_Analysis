@@ -3,11 +3,13 @@ import { useState, useEffect } from "react";
 
 // Fetch helper
 async function apiGet(path) {
-  const res = await fetch(`http://localhost:5000/api${path}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE}${path}`, {
     cache: "no-store",
   });
   return res.json();
 }
+
+
 
 export default function useStocks() {
   const [stocks, setStocks] = useState([]);
