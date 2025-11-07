@@ -20,7 +20,6 @@ export async function fetchCMP(symbol) {
 
     return price ? Number(price) : 0;
   } catch (err) {
-    console.log("❌ Error fetching CMP:", ticker, err.message);
-    return 0;
+    throw new Error(`Failed to fetch price for ${ticker}: ${err.message}`);
   }
 }

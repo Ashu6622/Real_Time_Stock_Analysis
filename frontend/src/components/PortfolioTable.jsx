@@ -11,12 +11,9 @@ export default function PortfolioTable({ data = [] }) {
     { Header: "Purchase Price", accessor: "purchasePrice" },
     { Header: "Qty", accessor: "qty" },
     { Header: "Investment", accessor: "investment" },
-    { Header: "Exchange", accessor: "exchange" },
     { Header: "CMP", accessor: "cmp" },
     { Header: "Present Value", accessor: "presentValue" },
     { Header: "Gain/Loss", accessor: "gainLoss" },
-    { Header: "P/E", accessor: "peRatio" },
-    { Header: "Earnings", accessor: "earnings" },
   ], []);
 
   const tableInstance = useTable({ columns, data: memoData }, useSortBy);

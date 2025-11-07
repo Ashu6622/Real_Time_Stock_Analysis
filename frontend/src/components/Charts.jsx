@@ -19,13 +19,14 @@ export default function Charts({ stocks = [] })
   }));
 
   const COLORS = [
+    "#5ecf19",
     "#4ade80",
     "#60a5fa",
     "#f472b6",
     "#facc15",
     "#fb923c",
     "#a78bfa",
-    "#38bdf8",
+    "#38bbc8",
   ];
 
   return (
