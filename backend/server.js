@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import { config } from "./config/config.js";
 import stockRoutes from "./routes/stockRoutes.js";
 import { errorMiddleware } from "./utils/errorHandler.js";
 
@@ -20,4 +19,9 @@ app.use("/api/stocks", stockRoutes);
 app.use(errorMiddleware);
 
 
-app.listen(config.port, () => console.log(`API running on :${config.port}`));
+app.listen(process.env.PORT, (error) =>{
+    if(error){
+        process.exit(1);
+    }
+    console.log(`API running on :${process.env.PORT}`);
+})
