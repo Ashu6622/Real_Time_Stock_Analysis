@@ -3,7 +3,7 @@ import { useMemo } from "react";
 import { useTable, useSortBy } from "react-table";
 
 export default function PortfolioTable({ data = [] }) {
-  // ✅ Ensure stable (avoids infinite render loop)
+
   const memoData = useMemo(() => data, [data]);
 
   const columns = useMemo(() => [

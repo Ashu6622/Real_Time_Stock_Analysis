@@ -2,8 +2,8 @@ import "../styles/globals.css";
 
 
 export const metadata = {
-title: "Dynamic Portfolio Dashboard",
-description: "Next.js + Tailwind + React-Table + Recharts",
+title: "Portfolio Dashboard",
+description: "Stock Market, BSE, Portfolio",
 icons: {
   icon: '/BSE_logo.png',
 },

@@ -1,7 +1,7 @@
 
 export default function SectorSummary({ summary = {} }) 
 {
-  const sectors = Object.entries(summary); // Convert object → array
+  const sectors = Object.entries(summary); // Convert object to array for traversal
 
   if (!sectors.length) {
     return (
