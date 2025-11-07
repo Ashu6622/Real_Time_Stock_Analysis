@@ -1,4 +1,4 @@
-# 📈 Stock Exchange Portfolio Dashboard
+# 📈 Stock Management Portfolio Dashboard
 
 A full-stack real-time stock portfolio management application that tracks your investments with live market data from Yahoo Finance API.
 
